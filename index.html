@@ -13,31 +13,32 @@
         <h1>Solarte Tributario</h1>
         <p>Soluciones Tributarias Confiables</p>
     </header>
-    
+
     <!-- Navegación -->
     <nav>
         <ul>
             <li><a href="#about">Quiénes Somos</a></li>
             <li><a href="#mission">Misión y Visión</a></li>
             <li><a href="#reviews">Reseñas</a></li>
+            <li><a href="#blog">Blog Verde</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Sección: Quiénes Somos -->
+    <!-- Quiénes Somos -->
     <section id="about">
         <h2>Quiénes Somos</h2>
         <p>En Solarte Tributario, nos dedicamos a brindar servicios de asesoramiento tributario y financiero para empresas y personas. Desde nuestra fundación en 2030, nos hemos ganado la confianza de nuestros clientes por nuestra ética, profesionalismo y compromiso con sus necesidades fiscales.</p>
     </section>
 
-    <!-- Sección: Misión y Visión -->
+    <!-- Misión y Visión -->
     <section id="mission">
         <h2>Misión y Visión</h2>
         <p><strong>Misión:</strong> Proveer servicios tributarios eficientes, personalizados y alineados con la normativa fiscal, ayudando a nuestros clientes a optimizar sus recursos.</p>
         <p><strong>Visión:</strong> Ser reconocidos en 2035 como líderes en servicios tributarios a nivel nacional, destacándonos por nuestra innovación, ética y excelencia.</p>
     </section>
 
-    <!-- Sección: Reseñas de Clientes -->
+    <!-- Reseñas de Clientes -->
     <section id="reviews">
         <h2>Reseñas de Clientes</h2>
         <blockquote>"Gracias a Solarte Tributario, mi empresa ha podido mantener sus finanzas en orden. Su equipo es altamente profesional." - Cliente A</blockquote>
@@ -45,30 +46,58 @@
         <blockquote>"El mejor servicio tributario que he recibido. Confiables, responsables y expertos." - Cliente C</blockquote>
     </section>
 
-    <!-- Sección: Contacto -->
+    <!-- Blog Verde -->
+    <section id="blog">
+        <h2>Tributación Verde: Noticias y Consejos</h2>
+        <article>
+            <h3>Incentivos Tributarios para Energías Renovables</h3>
+            <p>Descubre cómo tu empresa puede beneficiarse de exenciones fiscales al invertir en paneles solares. <a href="#" onclick="mostrarModal('renovables')">Leer más</a></p>
+        </article>
+        <article>
+            <h3>Deducciones por Programas de Reciclaje</h3>
+            <p>Implementar un sistema de reciclaje en tu empresa no solo ayuda al medio ambiente, ¡también puede reducir tus impuestos! <a href="#" onclick="mostrarModal('reciclaje')">Leer más</a></p>
+        </article>
+    </section>
+
+    <!-- Modales -->
+    <div id="modal-renovables" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('renovables')">&times;</span>
+            <h2>Incentivos Tributarios para Energías Renovables</h2>
+            <p>Las empresas que invierten en energía renovable pueden acceder a beneficios fiscales como exenciones tributarias y deducciones por inversión.</p>
+        </div>
+    </div>
+
+    <div id="modal-reciclaje" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('reciclaje')">&times;</span>
+            <h2>Deducciones por Programas de Reciclaje</h2>
+            <p>Implementar un sistema de reciclaje en tu empresa no solo ayuda al medio ambiente, ¡también puede reducir tus impuestos!</p>
+        </div>
+    </div>
+
+    <!-- Contacto -->
     <section id="contact">
         <h2>Contacto</h2>
         <p>Teléfono: <a href="tel:+573233248034">+57 323 324 8034</a></p>
         <p>Email: <a href="mailto:info@solartetributario.com">info@solartetributario.com</a></p>
         <p>Dirección: Calle de la Hacienda 123, Cali, Colombia</p>
     </section>
-    <section id="blog">
-    <h2>Tributación Verde: Noticias y Consejos</h2>
-    <article>
-        <h3>Incentivos Tributarios para Energías Renovables</h3>
-        <p>Descubre cómo tu empresa puede beneficiarse de exenciones fiscales al invertir en paneles solares. <a href="https://example.com">Leer más</a></p>
-    </article>
-    <article>
-        <h3>Deducciones por Programas de Reciclaje</h3>
-        <p>Implementar un sistema de reciclaje en tu empresa no solo ayuda al medio ambiente, ¡también puede reducir tus impuestos! <a href="https://example.com">Leer más</a></p>
-    </article>
-</section>
 
-
-    <!-- Pie de página -->
+    <!-- Pie de Página -->
     <footer>
         <p>&copy; 2030 Solarte Tributario. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- JavaScript para manejar los modales -->
+    <script>
+        function mostrarModal(id) {
+            document.getElementById('modal-' + id).style.display = "block";
+        }
+
+        function cerrarModal(id) {
+            document.getElementById('modal-' + id).style.display = "none";
+        }
+    </script>
 </body>
 </html>
-
