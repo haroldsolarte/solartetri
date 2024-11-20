@@ -1,73 +1,24 @@
-/* Modales */
-.modal {
-    display: none; /* Ocultar por defecto */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
-}
-
-.modal-content {
-    background-color: #fff; /* Fondo blanco */
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.modal-content h2 {
-    color: #b88a44; /* Dorado */
-    margin-bottom: 10px;
-}
-
-.modal-content p {
-    color: #333; /* Gris oscuro */
-    line-height: 1.6;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover, .close:focus {
-    color: #000; /* Negro al pasar el cursor */
-    text-decoration: none;
-}
-
-/* Color verde que combine con el dorado */
-.verde {
-    color: #3b8a4b; /* Verde oscuro */
-    border-bottom: 2px solid #3b8a4b; /* Línea verde debajo del título */
-}
-
-/* Estilos generales */
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7; /* Fondo gris claro */
     color: #333; /* Texto gris oscuro */
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* Encabezado */
 header {
     background-color: #b88a44; /* Dorado */
     color: #fff; /* Texto blanco */
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 header .logo {
-    max-width: 120px; /* Tamaño máximo del logo */
+    max-width: 120px;
     margin-bottom: 15px;
 }
 
@@ -79,9 +30,11 @@ header p {
     font-size: 18px;
 }
 
+/* Navegación */
 nav {
     background-color: #5a5a5a; /* Gris medio */
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -97,4 +50,80 @@ nav ul li {
 nav ul li a {
     color: #b88a44; /* Dorado */
     text-decoration: none;
-    font-size: 18px
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dorados */
+.dorados {
+    color: #b88a44; /* Dorado */
+    border-bottom: 2px solid #b88a44;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Texto verde */
+.verde {
+    color: #3b8a4b; /* Verde oscuro */
+    border-bottom: 2px solid #3b8a4b; /* Línea verde debajo del título */
+}
+
+/* Modales */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    color: #b88a44; /* Dorado */
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+}
